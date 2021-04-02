@@ -12,7 +12,7 @@ import javax.servlet.ServletRegistration;
 
 /**
  * 19.02.2021
- * 06.Hotel
+ * 01.Hotel
  *
  * @author Shamil Nurkaev @nshamil
  * 11-903

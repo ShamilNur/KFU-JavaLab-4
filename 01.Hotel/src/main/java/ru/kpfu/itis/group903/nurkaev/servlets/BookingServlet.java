@@ -49,7 +49,7 @@ public class BookingServlet extends HttpServlet {
                 user.setRoomsId(String.valueOf(roomId));
             }
 
-            usersService.update(user);
+            usersService.save(user);
         }
     }
 

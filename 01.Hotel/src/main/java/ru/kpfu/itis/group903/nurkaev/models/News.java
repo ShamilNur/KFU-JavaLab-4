@@ -5,7 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
+import javax.persistence.*;
+import java.util.List;
 
 /**
  * @author Shamil Nurkaev @nshamil
@@ -17,9 +18,19 @@ import javax.persistence.Entity;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
+@Table(name = "news_hotel")
 public class News {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String title;
     private String description;
     private String photo;
+
+    @ManyToMany
+    @JoinTable(name = "news_tag",
+            joinColumns = {@JoinColumn(name = "news_id", referencedColumnName = "id")},
+            inverseJoinColumns = {@JoinColumn(name = "tag_id", referencedColumnName = "id")})
+    private List<Tag> tags;
 }

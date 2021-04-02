@@ -17,7 +17,7 @@ import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 
 /**
  * 23.02.2021
- * 06.Hotel
+ * 01.Hotel
  *
  * @author Shamil Nurkaev @nshamil
  * 11-903

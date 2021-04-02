@@ -6,5 +6,5 @@ package ru.kpfu.itis.group903.nurkaev.exceptions;
  * Sem 1
  */
 
-public class WrongEmailOrPasswordException extends Exception {
+public class WrongEmailOrPasswordException extends RuntimeException {
 }

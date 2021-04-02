@@ -7,6 +7,14 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
+/**
+ * 01.03.2021
+ * 01.Hotel
+ *
+ * @author Shamil Nurkaev @nshamil
+ * 11-903
+ */
+
 @Constraint(validatedBy = PasswordValidator.class)
 @Target({ElementType.METHOD, ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)

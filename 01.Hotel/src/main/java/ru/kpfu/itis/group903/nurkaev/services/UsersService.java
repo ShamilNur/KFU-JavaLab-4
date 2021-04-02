@@ -9,11 +9,17 @@ import ru.kpfu.itis.group903.nurkaev.models.User;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * @author Shamil Nurkaev @nshamil
+ * 11-903
+ * Sem 2
+ */
+
 public interface UsersService {
     void save(User entity);
     void delete(User entity);
     void deleteByEmail(String email);
-    void update(User entity);
+//    void update(User entity);
     void updateByEmail(String firstName, String lastName, String email);
     List<User> getAllUsers();
     Optional<User> findById(Long id);

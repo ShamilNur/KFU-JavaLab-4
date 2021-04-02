@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.*;
+
 /**
  * @author Shamil Nurkaev @nshamil
  * 11-903
@@ -15,7 +17,11 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
+@Table(name = "room_hotel")
 public class Room {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
     private String photo;
@@ -25,4 +31,8 @@ public class Room {
     private Integer adultsNumber;
     private Integer childNumber;
     private Integer price;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 }

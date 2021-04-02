@@ -11,7 +11,7 @@ import java.util.Optional;
 /**
  * @author Shamil Nurkaev @nshamil
  * 11-903
- * Sem 1
+ * Sem 2
  */
 
 @Service(value = "newsService")
@@ -33,10 +33,10 @@ public class NewsServiceImpl implements NewsService {
         newsRepository.delete(entity);
     }
 
-    @Override
+    /*@Override
     public void update(News entity) {
         newsRepository.update(entity);
-    }
+    }*/
 
     @Override
     public List<News> findByTag(String tagName) {

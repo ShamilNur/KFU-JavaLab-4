@@ -1,6 +1,7 @@
 package ru.kpfu.itis.group903.nurkaev.dto;
 
 import lombok.*;
+import ru.kpfu.itis.group903.nurkaev.models.User;
 import ru.kpfu.itis.group903.nurkaev.validation.ValidNames;
 import ru.kpfu.itis.group903.nurkaev.validation.ValidPassword;
 
@@ -17,7 +18,10 @@ import javax.validation.constraints.Email;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-@ValidNames(message = "{errors.invalid.names}", name = "firstName", surname = "lastName")
+@ValidNames(
+        message = "{errors.invalid.names}",
+        name = "firstName",
+        surname = "lastName")
 public class UserDto {
     private String firstName;
 
@@ -33,4 +37,15 @@ public class UserDto {
     private String confirmPassword;
 
     private String uuid;
+
+    /*public static UserDto from(User user) {
+        return UserDto.builder()
+                .firstName(user.getFirstName())
+                .lastName(user.getLastName())
+                .email(user.getEmail())
+                .password(user.getHashPassword())
+                .confirmPassword(user.getHashPassword())
+                .u
+                .build()
+    }*/
 }

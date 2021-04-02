@@ -6,5 +6,5 @@ package ru.kpfu.itis.group903.nurkaev.exceptions;
  * Sem 1
  */
 
-public class DuplicateEntryException extends Exception {
+public class DuplicateEntryException extends RuntimeException {
 }

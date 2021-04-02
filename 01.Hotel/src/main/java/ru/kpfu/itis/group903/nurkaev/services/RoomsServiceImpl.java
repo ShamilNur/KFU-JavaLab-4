@@ -13,7 +13,7 @@ import java.util.Optional;
 /**
  * @author Shamil Nurkaev @nshamil
  * 11-903
- * Sem 1
+ * Sem 2
  */
 
 @Service(value = "roomsService")
@@ -35,10 +35,10 @@ public class RoomsServiceImpl implements RoomsService {
         roomsRepository.delete(entity);
     }
 
-    @Override
+    /*@Override
     public void update(Room entity) {
         roomsRepository.update(entity);
-    }
+    }*/
 
     @Override
     public Optional<Room> findById(Long id) {

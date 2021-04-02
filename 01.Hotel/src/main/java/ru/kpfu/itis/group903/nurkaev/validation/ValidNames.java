@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
 
 /**
  * 01.03.2021
- * 06.Hotel
+ * 01.Hotel
  *
  * @author Shamil Nurkaev @nshamil
  * 11-903
